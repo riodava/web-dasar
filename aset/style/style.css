@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand' sans-serif;
+}
+
+main {
+    padding: 20px;
+    overflow: auto;
+}
+
+
+h2,h3 {
+    color: black;
+}
+
+nav a {
+    font-size: 18px;
+    font-weight: 400px;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
+nav a :hover {
+    font-weight: bold;
+}
+
+.featured-image{
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0,2);
+    border-radius: 5px ;
+    padding: 20px;
+}
+
+.jumbotron {
+    font-size: 20px;
+    padding: 60px;
+    background-color: rgb(0, 255, 255);
+    text-align: center;
+    color:rgb(0, 0, 0);
+}
+
+nav ul{
+    padding-inline: 4rem;
+    display: flex;
+    gap: 2rem;
+}
+
+nav li{
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+nav {
+    background-color: whitesmoke;
+    padding: 5px;
+}
+
+.profile img{
+    width: 200px;
+}
+
+#content {
+ flex: 5;
+ display: flex;
+ flex-flow: column nowrap;
+ gap: 1rem 2rem;
+}
+
+aside {
+    flex: 1;
+}
+
+
+
+footer {
+    padding: 20px;
+    color: black;
+    background-color: rgb(0, 255, 255);
+    text-align: center;
+    font-weight: bold;
+}
+
+@media screen and (max-width :1000px) {
+    #content,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+}
